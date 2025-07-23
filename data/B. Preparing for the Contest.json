@@ -1,0 +1,16 @@
+{
+    "contest_id": "1914",
+    "problem_index": "B",
+    "title": "B. Preparing for the Contest",
+    "description": "Monocarp is practicing for a big contest. He plans to solve n n problems to make sure he's prepared. Each of these problems has a difficulty level: the first problem has a difficulty level of 1 1 , the second problem has a difficulty level of 2 2 , and so on, until the last ( n n -th) problem, which has a difficulty level of n n . Monocarp will choose some order in which he is going to solve all n n problems. Whenever he solves a problem which is more difficult than the last problem he solved, he gets excited because he feels like he's progressing. He doesn't get excited when he solves the first problem in his chosen order. For example, if Monocarp solves the problems in the order [ 3 , 5 – , 4 , 1 , 6 – , 2 ] [ 3 , 5 _ , 4 , 1 , 6 _ , 2 ] , he gets excited twice (the corresponding problems are underlined). Monocarp wants to get excited exactly k k times during his practicing session. Help him to choose the order in which he has to solve the problems!",
+    "input": "Input The first line contains one integer t t ( 1 ≤ t ≤ 1000 1 ≤ t ≤ 1000 ) — the number of test cases. Each test case consists of one line containing two integers n n and k k ( 2 ≤ n ≤ 50 2 ≤ n ≤ 50 ; 0 ≤ k ≤ n − 1 0 ≤ k ≤ n − 1 ).",
+    "output": "Output For each test case, print n n distinct integers from 1 1 to n n , denoting the order in which Monocarp should solve the problems. If there are multiple answers, print any of them. It can be shown that under the constraints of the problem, the answer always exists.",
+    "example": "Example\nInput\nCopy\n3\n6 2\n5 4\n5 0\nOutput\nCopy\n3 5 4 1 6 2\n1 2 3 4 5\n5 4 3 2 1",
+    "note": "",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "editorial_content": null
+}

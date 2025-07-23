@@ -1,0 +1,16 @@
+{
+    "contest_id": "1913",
+    "problem_index": "E",
+    "title": "E. Matrix Problem",
+    "description": "You are given a matrix a a , consisting of n n rows by m m columns. Each element of the matrix is equal to 0 0 or 1 1 . You can perform the following operation any number of times (possibly zero): choose an element of the matrix and replace it with either 0 0 or 1 1 . You are also given two arrays A A and B B (of length n n and m m respectively). After you perform the operations, the matrix should satisfy the following conditions: the number of ones in the i i -th row of the matrix should be exactly A i A i for every i ∈ [ 1 , n ] i ∈ [ 1 , n ] . the number of ones in the j j -th column of the matrix should be exactly B j B j for every j ∈ [ 1 , m ] j ∈ [ 1 , m ] . Calculate the minimum number of operations you have to perform.",
+    "input": "Input The first line contains two integers n n and m m ( 2 ≤ n , m ≤ 50 2 ≤ n , m ≤ 50 ). Then n n lines follow. The i i -th of them contains m m integers a i , 1 , a i , 2 , … , a i , m a i , 1 , a i , 2 , … , a i , m ( 0 ≤ a i , j ≤ 1 0 ≤ a i , j ≤ 1 ). The next line contains n n integers A 1 , A 2 , … , A n A 1 , A 2 , … , A n ( 0 ≤ A i ≤ m 0 ≤ A i ≤ m ). The next line contains m m integers B 1 , B 2 , … , B m B 1 , B 2 , … , B m ( 0 ≤ B i ≤ n 0 ≤ B i ≤ n ).",
+    "output": "Output Print one integer — the minimum number of operations you have to perform, or -1 if it is impossible.",
+    "example": "Examples\nInput\nCopy\n3 3\n0 0 0\n0 0 0\n0 0 0\n1 1 1\n1 1 1\nOutput\nCopy\n3\nInput\nCopy\n3 3\n1 1 1\n1 1 1\n1 1 1\n3 2 1\n1 2 3\nOutput\nCopy\n3\nInput\nCopy\n2 2\n0 0\n0 0\n1 2\n0 1\nOutput\nCopy\n-1",
+    "note": "",
+    "tags": [
+        "flows",
+        "graphs",
+        "*2400"
+    ],
+    "editorial_content": null
+}

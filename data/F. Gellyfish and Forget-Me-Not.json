@@ -1,0 +1,17 @@
+{
+    "contest_id": "2116",
+    "problem_index": "F",
+    "title": "F. Gellyfish and Forget-Me-Not",
+    "description": "Gellyfish and Flower are playing a game. The game consists of two arrays of n integers a 1 , a 2 , … , a n and b 1 , b 2 , … , b n , along with a binary string c 1 c 2 … c n of length n . There is also an integer x which is initialized to 0 . The game consists of n rounds. For i = 1 , 2 , … , n , the round proceeds as follows: If c i = 0 , Gellyfish will be the active player. Otherwise, if c i = 1 , Flower will be the active player. The active player will perform exactly one of the following operations: Set x := x ⊕ a i . Set x := x ⊕ b i . Here, ⊕ denotes the bitwise XOR operation . Gellyfish wants to minimize the final value of x after n rounds, while Flower wants to maximize it. Find the final value of x after all n rounds if both players play optimally.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases t ( 1 ≤ t ≤ 10 4 ). The description of the test cases follows. The first line of each test case contains a single integer n ( 1 ≤ n ≤ 10 5 ) — the number of rounds of the game. The second line of each test case contains n integers a 1 , a 2 , … , a n ( 0 ≤ a i < 2 60 ). The third line of each test case contains n integers b 1 , b 2 , … , b n ( 0 ≤ b i < 2 60 ). The fourth line of each test case contains a binary string c of length n . It is guaranteed that the sum of n over all test cases does not exceed 10 5 .",
+    "output": "Output For each test case, output a single integer — the final value of x after all n rounds.",
+    "example": "Example\nInput\nCopy\n5\n1\n0\n2\n0\n2\n12 2\n13 3\n11\n3\n6 1 2\n6 2 3\n010\n4\n1 12 7 2\n4 14 4 2\n0111\n9\n0 5 10 6 6 2 6 2 11\n7 3 15 3 6 7 6 7 8\n110010010\nOutput\nCopy\n0\n15\n6\n11\n5",
+    "note": "Note In the first test case, there's only one round and Gellyfish is the active player of that round. Therefore, she will choose a 1 , and the final value of x is 0 . In the second test case, Flower will be the active player in both rounds. She will choose a 1 and b 2 , and the final value of x is a 1 ⊕ b 2 = 15 . Flower may also choose b 1 and a 2 instead for the same result of x = a 2 ⊕ b 1 = 15 . In the third test case, a 1 = b 1 so it doesn't matter what decision Gellyfish makes in the first round. In the second round: If Flower chooses a 2 , then x will become 7 . Gellyfish will choose b 3 in the third round, so the final value of x will be 4 . Otherwise, Flower chooses b 2 , then x will become 4 . Gellyfish will choose a 3 in the third round, so the final value of x will be 6 . Flower wants to maximize the final value of x , so Flower will choose b 2 in the second round. Therefore, the final value of x will be 6 .",
+    "tags": [
+        "bitmasks",
+        "greedy",
+        "math",
+        "*2900"
+    ],
+    "editorial_content": null
+}

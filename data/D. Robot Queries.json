@@ -1,0 +1,18 @@
+{
+    "contest_id": "1902",
+    "problem_index": "D",
+    "title": "D. Robot Queries",
+    "description": "There is an infinite 2 2 -dimensional grid. Initially, a robot stands in the point ( 0 , 0 ) ( 0 , 0 ) . The robot can execute four commands: U — move from point ( x , y ) ( x , y ) to ( x , y + 1 ) ( x , y + 1 ) ; D — move from point ( x , y ) ( x , y ) to ( x , y − 1 ) ( x , y − 1 ) ; L — move from point ( x , y ) ( x , y ) to ( x − 1 , y ) ( x − 1 , y ) ; R — move from point ( x , y ) ( x , y ) to ( x + 1 , y ) ( x + 1 , y ) . You are given a sequence of commands s s of length n n . Your task is to answer q q independent queries: given four integers x x , y y , l l and r r ; determine whether the robot visits the point ( x , y ) ( x , y ) , while executing a sequence s s , but the substring from l l to r r is reversed (i. e. the robot performs commands in order s 1 s 2 s 3 … s l − 1 s r s r − 1 s r − 2 … s l s r + 1 s r + 2 … s n s 1 s 2 s 3 … s l − 1 s r s r − 1 s r − 2 … s l s r + 1 s r + 2 … s n ).",
+    "input": "Input The first line contains two integers n n and q q ( 1 ≤ n , q ≤ 2 ⋅ 10 5 1 ≤ n , q ≤ 2 ⋅ 10 5 ) — the length of the command sequence and the number of queries, respectively. The second line contains a string s s of length n n , consisting of characters U , D , L and/or R . Then q q lines follow, the i i -th of them contains four integers x i x i , y i y i , l i l i and r i r i ( − n ≤ x i , y i ≤ n − n ≤ x i , y i ≤ n ; 1 ≤ l ≤ r ≤ n 1 ≤ l ≤ r ≤ n ) describing the i i -th query.",
+    "output": "Output For each query, print YES if the robot visits the point ( x , y ) ( x , y ) , while executing a sequence s s , but the substring from l l to r r is reversed; otherwise print NO .",
+    "example": "Examples\nInput\nCopy\n8 3\nRDLLUURU\n-1 2 1 7\n0 0 3 4\n0 1 7 8\nOutput\nCopy\nYES\nYES\nNO\nInput\nCopy\n4 2\nRLDU\n0 0 2 2\n-1 -1 2 3\nOutput\nCopy\nYES\nNO\nInput\nCopy\n10 6\nDLUDLRULLD\n-1 0 1 10\n-1 -2 2 5\n-4 -2 6 10\n-1 0 3 9\n0 1 4 7\n-3 -1 5 8\nOutput\nCopy\nYES\nYES\nYES\nNO\nYES\nYES",
+    "note": "Note In the first query of the first sample, the path of the robot looks as follows: In the second query of the first sample, the path of the robot looks as follows: In the third query of the first sample, the path of the robot looks as follows:",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "implementation",
+        "*1900"
+    ],
+    "editorial_content": null
+}

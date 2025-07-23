@@ -1,0 +1,18 @@
+{
+    "contest_id": "2114",
+    "problem_index": "D",
+    "title": "D. Come a Little Closer",
+    "description": "The game field is a matrix of size 10 9 × 10 9 , with a cell at the intersection of the a -th row and the b -th column denoted as ( a , b ). There are n monsters on the game field, with the i -th monster located in the cell ( x i , y i ), while the other cells are empty. No more than one monster can occupy a single cell. You can move one monster to any cell on the field that is not occupied by another monster at most once . After that, you must select one rectangle on the field; all monsters within the selected rectangle will be destroyed. You must pay 1 coin for each cell in the selected rectangle. Your task is to find the minimum number of coins required to destroy all the monsters.",
+    "input": "Input The first line contains a single integer t ( 1 ≤ t ≤ 10 4 ) — the number of test cases. The first line of each test case contains a single integer n ( 1 ≤ n ≤ 2 ⋅ 10 5 ) — the number of monsters on the field. The following n lines contain two integers x i and y i ( 1 ≤ x i , y i ≤ 10 9 ) — the coordinates of the cell with the i -th monster. All pairs ( x i , y i ) are distinct. It is guaranteed that the sum of n across all test cases does not exceed 2 ⋅ 10 5 .",
+    "output": "Output For each test case, output a single integer — the minimum cost to destroy all n monsters.",
+    "example": "Example\nInput\nCopy\n7\n3\n1 1\n1 2\n2 1\n5\n1 1\n2 6\n6 4\n3 3\n8 2\n4\n1 1\n1 1000000000\n1000000000 1\n1000000000 1000000000\n1\n1 1\n5\n1 2\n4 2\n4 3\n3 1\n3 2\n3\n1 1\n2 5\n2 2\n4\n4 3\n3 1\n4 4\n1 2\nOutput\nCopy\n3\n32\n1000000000000000000\n1\n6\n4\n8",
+    "note": "Note Below are examples of optimal moves, with the cells of the rectangle to be selected highlighted in green. Required move for the first example. Required move for the fifth example.",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "math",
+        "*1400"
+    ],
+    "editorial_content": null
+}

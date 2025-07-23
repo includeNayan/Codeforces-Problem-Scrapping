@@ -1,0 +1,16 @@
+{
+    "contest_id": "1914",
+    "problem_index": "C",
+    "title": "C. Quests",
+    "description": "Monocarp is playing a computer game. In order to level up his character, he can complete quests. There are n n quests in the game, numbered from 1 1 to n n . Monocarp can complete quests according to the following rules: the 1 1 -st quest is always available for completion; the i i -th quest is available for completion if all quests j < i j < i have been completed at least once. Note that Monocarp can complete the same quest multiple times. For each completion, the character gets some amount of experience points: for the first completion of the i i -th quest, he gets a i a i experience points; for each subsequent completion of the i i -th quest, he gets b i b i experience points. Monocarp is a very busy person, so he has free time to complete no more than k k quests. Your task is to calculate the maximum possible total experience Monocarp can get if he can complete no more than k k quests.",
+    "input": "Input The first line contains a single integer t t ( 1 ≤ t ≤ 10 4 1 ≤ t ≤ 10 4 ) — the number of test cases. The first line of each test case contains two integers n n and k k ( 1 ≤ n ≤ 2 ⋅ 10 5 1 ≤ n ≤ 2 ⋅ 10 5 ; 1 ≤ k ≤ 2 ⋅ 10 5 1 ≤ k ≤ 2 ⋅ 10 5 ) — the number of quests and the maximum number of quests Monocarp can complete, respectively. The second line contains n n integers a 1 , a 2 , … , a n a 1 , a 2 , … , a n ( 1 ≤ a i ≤ 10 3 1 ≤ a i ≤ 10 3 ). The third line contains n n integers b 1 , b 2 , … , b n b 1 , b 2 , … , b n ( 1 ≤ b i ≤ 10 3 1 ≤ b i ≤ 10 3 ). Additional constraint on the input: the sum of n n over all test cases does not exceed 2 ⋅ 10 5 2 ⋅ 10 5 .",
+    "output": "Output For each test case, print a single integer — the maximum possible total experience Monocarp can get if he can complete no more than k k quests.",
+    "example": "Example\nInput\nCopy\n4\n4 7\n4 3 1 2\n1 1 1 1\n3 2\n1 2 5\n3 1 8\n5 5\n3 2 4 1 4\n2 3 1 4 7\n6 4\n1 4 5 4 5 10\n1 5 1 2 5 1\nOutput\nCopy\n13\n4\n15\n15",
+    "note": "Note In the first test case, one of the possible quest completion sequences is as follows: 1 , 1 , 2 , 3 , 2 , 4 , 4 1 , 1 , 2 , 3 , 2 , 4 , 4 ; its total experience is equal to 4 – + 1 + 3 – + 1 – + 1 + 2 – + 1 = 13 4 _ + 1 + 3 _ + 1 _ + 1 + 2 _ + 1 = 13 (the underlined numbers correspond to the instances when we complete a quest for the first time). In the second test case, one of the possible quest completion sequences is as follows: 1 , 1 1 , 1 ; its total experience is equal to 1 – + 3 = 4 1 _ + 3 = 4 . In the third test case, one of the possible quest completion sequences is as follows: 1 , 2 , 2 , 2 , 3 1 , 2 , 2 , 2 , 3 ; its total experience is equal to 3 – + 2 – + 3 + 3 + 4 – = 15 3 _ + 2 _ + 3 + 3 + 4 _ = 15 .",
+    "tags": [
+        "greedy",
+        "math",
+        "*1100"
+    ],
+    "editorial_content": null
+}

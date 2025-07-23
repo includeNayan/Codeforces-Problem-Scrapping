@@ -1,0 +1,17 @@
+{
+    "contest_id": "1846",
+    "problem_index": "E",
+    "title": "E1. Rudolf and Snowflakes (simple version)",
+    "description": "This is a simple version of the problem. The only difference is that in this version n ≤ 10 6 n ≤ 10 6 . One winter morning, Rudolf was looking thoughtfully out the window, watching the falling snowflakes. He quickly noticed a certain symmetry in the configuration of the snowflakes. And like a true mathematician, Rudolf came up with a mathematical model of a snowflake. He defined a snowflake as an undirected graph constructed according to the following rules: Initially, the graph has only one vertex. Then, more vertices are added to the graph. The initial vertex is connected by edges to k k new vertices ( k > 1 k > 1 ). Each vertex that is connected to only one other vertex is connected by edges to k k more new vertices. This step should be done at least once . The smallest possible snowflake for k = 4 k = 4 is shown in the figure. After some mathematical research, Rudolf realized that such snowflakes may not have any number of vertices. Help Rudolf check if a snowflake with n n vertices can exist.",
+    "input": "Input The first line of the input contains an integer t t ( 1 ≤ t ≤ 10 4 1 ≤ t ≤ 10 4 ) — the number of test cases. Then follow the descriptions of the test cases. The first line of each test case contains an integer n n ( 1 ≤ n ≤ 10 6 1 ≤ n ≤ 10 6 ) — the number of vertices for which it is necessary to check the existence of a snowflake.",
+    "output": "Output Output t t lines, each of which is the answer to the corresponding test case — \"YES\" if there exists such k > 1 k > 1 for which a snowflake with the given number of vertices can be constructed; \"NO\" otherwise.",
+    "example": "Example\nInput\nCopy\n9\n1\n2\n3\n6\n13\n15\n255\n10101\n1000000\nOutput\nCopy\nNO\nNO\nNO\nNO\nYES\nYES\nYES\nYES\nNO",
+    "note": "",
+    "tags": [
+        "brute force",
+        "implementation",
+        "math",
+        "*1300"
+    ],
+    "editorial_content": null
+}

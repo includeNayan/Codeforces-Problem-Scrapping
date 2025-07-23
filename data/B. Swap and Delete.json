@@ -1,0 +1,15 @@
+{
+    "contest_id": "1913",
+    "problem_index": "B",
+    "title": "B. Swap and Delete",
+    "description": "You are given a binary string s s (a string consisting only of 0 -s and 1 -s). You can perform two types of operations on s s : delete one character from s s . This operation costs 1 1 coin; swap any pair of characters in s s . This operation is free (costs 0 0 coins). You can perform these operations any number of times and in any order. Let's name a string you've got after performing operations above as t t . The string t t is good if for each i i from 1 1 to | t | | t | t i ≠ s i t i ≠ s i ( | t | | t | is the length of the string t t ). The empty string is always good . Note that you are comparing the resulting string t t with the initial string s s . What is the minimum total cost to make the string t t good?",
+    "input": "Input The first line contains a single integer t t ( 1 ≤ t ≤ 10 4 1 ≤ t ≤ 10 4 ) — the number of test cases. Then t t test cases follow. The only line of each test case contains a binary string s s ( 1 ≤ | s | ≤ 2 ⋅ 10 5 1 ≤ | s | ≤ 2 ⋅ 10 5 ; s i ∈ { s i ∈ { 0 , 1 } } ) — the initial string, consisting of characters 0 and/or 1 . Additional constraint on the input: the total length of all strings s s doesn't exceed 2 ⋅ 10 5 2 ⋅ 10 5 .",
+    "output": "Output For each test case, print one integer — the minimum total cost to make string t t good.",
+    "example": "Example\nInput\nCopy\n4\n0\n011\n0101110001\n111100\nOutput\nCopy\n1\n1\n0\n4",
+    "note": "Note In the first test case, you have to delete a character from s s to get the empty string t t . Only then t t becomes good. One deletion costs 1 1 coin. In the second test case, you can, for example, delete the second character from s s to get the string 01 , and then swap the first and second characters to get the string t t = = 10 . String t t is good, since t 1 ≠ s 1 t 1 ≠ s 1 and t 2 ≠ s 2 t 2 ≠ s 2 . The total cost is 1 1 coin. In the third test case, you can, for example, swap s 1 s 1 with s 2 s 2 , swap s 3 s 3 with s 4 s 4 , swap s 5 s 5 with s 7 s 7 , s 6 s 6 with s 8 s 8 and s 9 s 9 with s 10 s 10 . You'll get t t = = 1010001110 . All swap operations are free, so the total cost is 0 0 .",
+    "tags": [
+        "strings",
+        "*1000"
+    ],
+    "editorial_content": null
+}

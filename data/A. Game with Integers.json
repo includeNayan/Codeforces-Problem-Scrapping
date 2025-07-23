@@ -1,0 +1,17 @@
+{
+    "contest_id": "1899",
+    "problem_index": "A",
+    "title": "A. Game with Integers",
+    "description": "Vanya and Vova are playing a game. Players are given an integer n n . On their turn, the player can add 1 1 to the current integer or subtract 1 1 . The players take turns; Vanya starts. If after Vanya's move the integer is divisible by 3 3 , then he wins. If 10 10 moves have passed and Vanya has not won, then Vova wins. Write a program that, based on the integer n n , determines who will win if both players play optimally.",
+    "input": "Input The first line contains the integer t t ( 1 ≤ t ≤ 100 1 ≤ t ≤ 100 ) — the number of test cases. The single line of each test case contains the integer n n ( 1 ≤ n ≤ 1000 1 ≤ n ≤ 1000 ).",
+    "output": "Output For each test case, print \" First \" without quotes if Vanya wins, and \" Second \" without quotes if Vova wins.",
+    "example": "Example\nInput\nCopy\n6\n1\n3\n5\n100\n999\n1000\nOutput\nCopy\nFirst\nSecond\nFirst\nFirst\nSecond\nFirst",
+    "note": "",
+    "tags": [
+        "games",
+        "math",
+        "number theory",
+        "*800"
+    ],
+    "editorial_content": null
+}

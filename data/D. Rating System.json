@@ -1,0 +1,22 @@
+{
+    "contest_id": "1845",
+    "problem_index": "D",
+    "title": "D. Rating System",
+    "description": "You are developing a rating system for an online game. Every time a player participates in a match, the player's rating changes depending on the results. Initially, the player's rating is 0 0 . There are n n matches; after the i i -th match, the rating change is equal to a i a i (the rating increases by a i a i if a i a i is positive, or decreases by | a i | | a i | if it's negative. There are no zeros in the sequence a a ). The system has an additional rule: for a fixed integer k k , if a player's rating has reached the value k k , it will never fall below it. Formally, if a player's rating at least k k , and a rating change would make it less than k k , then the rating will decrease to exactly k k . Your task is to determine the value k k in such a way that the player's rating after all n n matches is the maximum possible (among all integer values of k k ). If there are multiple possible answers, you can print any of them.",
+    "input": "Input The first line contains a single integer t t ( 1 ≤ t ≤ 10 4 1 ≤ t ≤ 10 4 ) — the number of test cases. The first line of each test case contains a single integer n n ( 1 ≤ n ≤ 3 ⋅ 10 5 1 ≤ n ≤ 3 ⋅ 10 5 ) — the number of matches. The second line contains n n integer a 1 , a 2 , … , a n a 1 , a 2 , … , a n ( − 10 9 ≤ a i ≤ 10 9 − 10 9 ≤ a i ≤ 10 9 ; a i ≠ 0 a i ≠ 0 ) — the rating change after the i i -th match. The sum of n n over all test cases doesn't exceed 3 ⋅ 10 5 3 ⋅ 10 5 .",
+    "output": "Output For each test case, print one integer m m ( − 10 18 ≤ m ≤ 10 18 − 10 18 ≤ m ≤ 10 18 ) — the value of k k such that the rating of the player will be the maximum possible when using this value. It can be shown that at least one of the optimal answers meets the constraint − 10 18 ≤ m ≤ 10 18 − 10 18 ≤ m ≤ 10 18 .",
+    "example": "Example\nInput\nCopy\n4\n4\n3 -2 1 2\n3\n-1 -2 -1\n2\n4 2\n7\n5 1 -3 2 -1 -2 2\nOutput\nCopy\n3\n0\n25\n6",
+    "note": "Note In the first example, if k = 3 k = 3 , then the rating changes as follows: 0 → 3 → 3 → 4 → 6 0 → 3 → 3 → 4 → 6 . In the second example, if k = 0 k = 0 , then the rating changes as follows: 0 → 0 → 0 → 0 0 → 0 → 0 → 0 . In the third example, if k = 25 k = 25 , then the rating changes as follows: 0 → 4 → 6 0 → 4 → 6 . In the fourth example, if k = 6 k = 6 , then the rating changes as follows: 0 → 5 → 6 → 6 → 8 → 7 → 6 → 8 0 → 5 → 6 → 6 → 8 → 7 → 6 → 8 .",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "dp",
+        "dsu",
+        "greedy",
+        "math",
+        "two pointers",
+        "*1800"
+    ],
+    "editorial_content": null
+}

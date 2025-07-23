@@ -1,0 +1,18 @@
+{
+    "contest_id": "1831",
+    "problem_index": "D",
+    "title": "D. The BOSS Can Count Pairs",
+    "description": "You are given two arrays a a and b b , both of length n n . Your task is to count the number of pairs of integers ( i , j ) ( i , j ) such that 1 ≤ i < j ≤ n 1 ≤ i < j ≤ n and a i ⋅ a j = b i + b j a i ⋅ a j = b i + b j .",
+    "input": "Input Each test contains multiple test cases. The first line of input contains a single integer t t ( 1 ≤ t ≤ 10 4 1 ≤ t ≤ 10 4 ) — the number of test cases. The description of test cases follows. The first line of each test case contains a single integer n n ( 2 ≤ n ≤ 2 ⋅ 10 5 2 ≤ n ≤ 2 ⋅ 10 5 ) — the length of the arrays. The second line of each test case contains n n integers a 1 , a 2 , … , a n a 1 , a 2 , … , a n ( 1 ≤ a i ≤ n 1 ≤ a i ≤ n ) — the elements of array a a . The third line of each test case contains n n integers b 1 , b 2 , … , b n b 1 , b 2 , … , b n ( 1 ≤ b i ≤ n 1 ≤ b i ≤ n ) — the elements of array b b . It is guaranteed that the sum of n n across all test cases does not exceed 2 ⋅ 10 5 2 ⋅ 10 5 .",
+    "output": "Output For each test case, output the number of good pairs.",
+    "example": "Example\nInput\nCopy\n3\n3\n2 3 2\n3 3 1\n8\n4 2 8 2 1 2 7 5\n3 5 8 8 1 1 6 5\n8\n4 4 8 8 8 8 8 8\n8 8 8 8 8 8 8 8\nOutput\nCopy\n2\n7\n1",
+    "note": "Note In the first sample, there are 2 2 good pairs: ( 1 , 2 ) ( 1 , 2 ) , ( 1 , 3 ) ( 1 , 3 ) . In the second sample, there are 7 7 good pairs: ( 1 , 2 ) ( 1 , 2 ) , ( 1 , 5 ) ( 1 , 5 ) , ( 2 , 8 ) ( 2 , 8 ) , ( 3 , 4 ) ( 3 , 4 ) , ( 4 , 7 ) ( 4 , 7 ) , ( 5 , 6 ) ( 5 , 6 ) , ( 5 , 7 ) ( 5 , 7 ) .",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "math",
+        "*2000"
+    ],
+    "editorial_content": null
+}

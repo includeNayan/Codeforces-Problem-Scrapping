@@ -1,0 +1,15 @@
+{
+    "contest_id": "1882",
+    "problem_index": "A",
+    "title": "A. Increasing Sequence",
+    "description": "You are given a sequence a 1 , a 2 , … , a n a 1 , a 2 , … , a n . A sequence b 1 , b 2 , … , b n b 1 , b 2 , … , b n is called good , if it satisfies all of the following conditions: b i b i is a positive integer for i = 1 , 2 , … , n i = 1 , 2 , … , n ; b i ≠ a i b i ≠ a i for i = 1 , 2 , … , n i = 1 , 2 , … , n ; b 1 < b 2 < … < b n b 1 < b 2 < … < b n . Find the minimum value of b n b n among all good sequences b 1 , b 2 , … , b n b 1 , b 2 , … , b n .",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases t t ( 1 ≤ t ≤ 100 1 ≤ t ≤ 100 ). The description of the test cases follows. The first line of each test case contains a single integer n n ( 1 ≤ n ≤ 100 1 ≤ n ≤ 100 ). The second line of each test case contains n n integers a 1 , a 2 , … , a n a 1 , a 2 , … , a n ( 1 ≤ a i ≤ 10 9 1 ≤ a i ≤ 10 9 ).",
+    "output": "Output For each test case, print a single integer — the minimum value of b n b n among all good sequences b b .",
+    "example": "Example\nInput\nCopy\n3\n5\n1 3 2 6 7\n4\n2 3 4 5\n1\n1\nOutput\nCopy\n8\n4\n2",
+    "note": "Note In the first test case, b = [ 2 , 4 , 5 , 7 , 8 ] b = [ 2 , 4 , 5 , 7 , 8 ] is a good sequence. It can be proved that there is no good b b with b 5 < 8 b 5 < 8 . In the second test case, b = [ 1 , 2 , 3 , 4 ] b = [ 1 , 2 , 3 , 4 ] is an optimal good sequence. In the third test case, b = [ 2 ] b = [ 2 ] is an optimal good sequence.",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "editorial_content": null
+}

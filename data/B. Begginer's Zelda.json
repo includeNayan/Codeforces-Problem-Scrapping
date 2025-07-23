@@ -1,0 +1,16 @@
+{
+    "contest_id": "1905",
+    "problem_index": "B",
+    "title": "B. Begginer's Zelda",
+    "description": "You are given a tree † † . In one zelda-operation you can do follows: Choose two vertices of the tree u u and v v ; Compress all the vertices on the path from u u to v v into one vertex. In other words, all the vertices on path from u u to v v will be erased from the tree, a new vertex w w will be created. Then every vertex s s that had an edge to some vertex on the path from u u to v v will have an edge to the vertex w w . Illustration of a zelda-operation performed for vertices 1 1 and 5 5 . Determine the minimum number of zelda-operations required for the tree to have only one vertex. † † A tree is a connected acyclic undirected graph.",
+    "input": "Input Each test consists of multiple test cases. The first line contains a single integer t t ( 1 ≤ t ≤ 10 4 1 ≤ t ≤ 10 4 ) — the number of test cases. The description of the test cases follows. The first line of each test case contains a single integer n n ( 2 ≤ n ≤ 10 5 2 ≤ n ≤ 10 5 ) — the number of vertices. i i -th of the next n − 1 n − 1 lines contains two integers u i u i and v i v i ( 1 ≤ u i , v i ≤ n , u i ≠ v i 1 ≤ u i , v i ≤ n , u i ≠ v i ) — the numbers of vertices connected by the i i -th edge. It is guaranteed that the given edges form a tree. It is guaranteed that the sum of n n over all test cases does not exceed 10 5 10 5 .",
+    "output": "Output For each test case, output a single integer — the minimum number of zelda-operations required for the tree to have only one vertex.",
+    "example": "Example\nInput\nCopy\n4\n4\n1 2\n1 3\n3 4\n9\n3 1\n3 5\n3 2\n5 6\n6 7\n7 8\n7 9\n6 4\n7\n1 2\n1 3\n2 4\n4 5\n3 6\n2 7\n6\n1 2\n1 3\n1 4\n4 5\n2 6\nOutput\nCopy\n1\n3\n2\n2",
+    "note": "Note In the first test case, it's enough to perform one zelda-operation for vertices 2 2 and 4 4 . In the second test case, we can perform the following zelda-operations: u = 2 , v = 1 u = 2 , v = 1 . Let the resulting added vertex be labeled as w = 10 w = 10 ; u = 4 , v = 9 u = 4 , v = 9 . Let the resulting added vertex be labeled as w = 11 w = 11 ; u = 8 , v = 10 u = 8 , v = 10 . After this operation, the tree consists of a single vertex.",
+    "tags": [
+        "greedy",
+        "trees",
+        "*1100"
+    ],
+    "editorial_content": null
+}

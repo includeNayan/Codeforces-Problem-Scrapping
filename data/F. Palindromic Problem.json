@@ -1,0 +1,19 @@
+{
+    "contest_id": "1913",
+    "problem_index": "F",
+    "title": "F. Palindromic Problem",
+    "description": "You are given a string s s of length n n , consisting of lowercase Latin letters. You are allowed to replace at most one character in the string with an arbitrary lowercase Latin letter. Print the lexicographically minimal string that can be obtained from the original string and contains the maximum number of palindromes as substrings. Note that if a palindrome appears more than once as a substring, it is counted the same number of times it appears. The string a a is lexicographically smaller than the string b b if and only if one of the following holds: a a is a prefix of b b , but a ≠ b a ≠ b ; in the first position where a a and b b are different, the string a a contains a letter that appears earlier in the alphabet than the corresponding letter in b b .",
+    "input": "Input The first line contains one integer n n ( 1 ≤ n ≤ 3 ⋅ 10 5 1 ≤ n ≤ 3 ⋅ 10 5 ) — the number of characters in the string. The second line contains the string s s itself, consisting of exactly n n lowercase Latin letters.",
+    "output": "Output In the first line, print one integer — the maximum number of palindromic substrings that can be obtained using the operation described in the statement at most once. In the second line, print the string that can be obtained from s s and has the maximum possible number of palindromic substrings. If there are multiple answers, print the lexicographically smallest one.",
+    "example": "Examples\nInput\nCopy\n5\naabaa\nOutput\nCopy\n15\naaaaa\nInput\nCopy\n5\naaaaa\nOutput\nCopy\n15\naaaaa\nInput\nCopy\n4\nawoo\nOutput\nCopy\n7\naooo",
+    "note": "",
+    "tags": [
+        "binary search",
+        "data structures",
+        "hashing",
+        "string suffix structures",
+        "strings",
+        "*2800"
+    ],
+    "editorial_content": null
+}

@@ -1,0 +1,17 @@
+{
+    "contest_id": "1907",
+    "problem_index": "B",
+    "title": "B. YetnotherrokenKeoard",
+    "description": "Polycarp has a problem — his laptop keyboard is broken. Now, when he presses the ' b ' key, it acts like an unusual backspace: it deletes the last (rightmost) lowercase letter in the typed string. If there are no lowercase letters in the typed string, then the press is completely ignored. Similarly, when he presses the ' B ' key, it deletes the last (rightmost) uppercase letter in the typed string. If there are no uppercase letters in the typed string, then the press is completely ignored. In both cases, the letters ' b ' and ' B ' are not added to the typed string when these keys are pressed. Consider an example where the sequence of key presses was \" ARaBbbitBaby \". In this case, the typed string will change as follows: \"\" A → → A \"A\" R → → R \"AR\" a → → a \"ARa\" B → → B \"Aa\" b → → b \"A\" b → → b \"A\" i → → i \"Ai\" t → → t \"Ait\" B → → B \"it\" a → → a \"ita\" b → → b \"it\" y → → y \"ity\" . Given a sequence of pressed keys, output the typed string after processing all key presses.",
+    "input": "Input The first line of the input data contains an integer t t ( 1 ≤ t ≤ 1000 1 ≤ t ≤ 1000 ), the number of test cases in the test. The following contains t t non-empty lines, which consist of lowercase and uppercase letters of the Latin alphabet. It is guaranteed that each line contains at least one letter and the sum of the lengths of the lines does not exceed 10 6 10 6 .",
+    "output": "Output For each test case, output the result of processing the key presses on a separate line. If the typed string is empty, then output an empty line.",
+    "example": "Example\nInput\nCopy\n12\nARaBbbitBaby\nYetAnotherBrokenKeyboard\nBubble\nImprobable\nabbreviable\nBbBB\nBusyasaBeeinaBedofBloomingBlossoms\nCoDEBARbIES\ncodeforces\nbobebobbes\nb\nTheBBlackbboard\nOutput\nCopy\nity\nYetnotherrokenKeoard\nle\nImprle\nrevile\n\nusyasaeeinaedofloominglossoms\nCDARIES\ncodeforces\nes\n\nhelaoard",
+    "note": "",
+    "tags": [
+        "data structures",
+        "implementation",
+        "strings",
+        "*1000"
+    ],
+    "editorial_content": null
+}

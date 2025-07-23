@@ -1,0 +1,17 @@
+{
+    "contest_id": "1902",
+    "problem_index": "E",
+    "title": "E. Collapsing Strings",
+    "description": "You are given n n strings s 1 , s 2 , … , s n s 1 , s 2 , … , s n , consisting of lowercase Latin letters. Let | x | | x | be the length of string x x . Let a collapse C ( a , b ) C ( a , b ) of two strings a a and b b be the following operation: if a a is empty, C ( a , b ) = b C ( a , b ) = b ; if b b is empty, C ( a , b ) = a C ( a , b ) = a ; if the last letter of a a is equal to the first letter of b b , then C ( a , b ) = C ( a 1 , | a | − 1 , b 2 , | b | ) C ( a , b ) = C ( a 1 , | a | − 1 , b 2 , | b | ) , where s l , r s l , r is the substring of s s from the l l -th letter to the r r -th one; otherwise, C ( a , b ) = a + b C ( a , b ) = a + b , i. e. the concatenation of two strings. Calculate ∑ i = 1 n ∑ j = 1 n | C ( s i , s j ) | ∑ i = 1 n ∑ j = 1 n | C ( s i , s j ) | .",
+    "input": "Input The first line contains a single integer n n ( 1 ≤ n ≤ 10 6 1 ≤ n ≤ 10 6 ). Each of the next n n lines contains a string s i s i ( 1 ≤ | s i | ≤ 10 6 1 ≤ | s i | ≤ 10 6 ), consisting of lowercase Latin letters. The total length of the strings doesn't exceed 10 6 10 6 .",
+    "output": "Output Print a single integer — ∑ i = 1 n ∑ j = 1 n | C ( s i , s j ) | ∑ i = 1 n ∑ j = 1 n | C ( s i , s j ) | .",
+    "example": "Examples\nInput\nCopy\n3\naba\nab\nba\nOutput\nCopy\n20\nInput\nCopy\n5\nabab\nbabx\nxab\nxba\nbab\nOutput\nCopy\n126",
+    "note": "",
+    "tags": [
+        "data structures",
+        "strings",
+        "trees",
+        "*1900"
+    ],
+    "editorial_content": null
+}

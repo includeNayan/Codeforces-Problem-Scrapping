@@ -1,0 +1,19 @@
+{
+    "contest_id": "1902",
+    "problem_index": "C",
+    "title": "C. Insert and Equalize",
+    "description": "You are given an integer array a 1 , a 2 , … , a n a 1 , a 2 , … , a n , all its elements are distinct. First, you are asked to insert one more integer a n + 1 a n + 1 into this array. a n + 1 a n + 1 should not be equal to any of a 1 , a 2 , … , a n a 1 , a 2 , … , a n . Then, you will have to make all elements of the array equal. At the start, you choose a positive integer x x ( x > 0 x > 0 ). In one operation, you add x x to exactly one element of the array. Note that x x is the same for all operations . What's the smallest number of operations it can take you to make all elements equal, after you choose a n + 1 a n + 1 and x x ?",
+    "input": "Input The first line contains a single integer t t ( 1 ≤ t ≤ 10 4 1 ≤ t ≤ 10 4 ) — the number of testcases. The first line of each testcase contains a single integer n n ( 1 ≤ n ≤ 2 ⋅ 10 5 1 ≤ n ≤ 2 ⋅ 10 5 ). The second line contains n n integers a 1 , a 2 , … , a n a 1 , a 2 , … , a n ( − 10 9 ≤ a i ≤ 10 9 − 10 9 ≤ a i ≤ 10 9 ). All a i a i are distinct. The sum of n n over all testcases doesn't exceed 2 ⋅ 10 5 2 ⋅ 10 5 .",
+    "output": "Output For each testcase, print a single integer — the smallest number of operations it can take you to make all elements equal, after you choose integers a n + 1 a n + 1 and x x .",
+    "example": "Example\nInput\nCopy\n3\n3\n1 2 3\n5\n1 -19 17 -3 -15\n1\n10\nOutput\nCopy\n6\n27\n1",
+    "note": "Note In the first testcase, you can choose a n + 1 = 4 a n + 1 = 4 , the array becomes [ 1 , 2 , 3 , 4 ] [ 1 , 2 , 3 , 4 ] . Then choose x = 1 x = 1 and apply the operation 3 3 times to the first element, 2 2 times to the second element, 1 1 time to the third element and 0 0 times to the fourth element. In the second testcase, you can choose a n + 1 = 13 , x = 4 a n + 1 = 13 , x = 4 . In the third testcase, you can choose a n + 1 = 9 , x = 1 a n + 1 = 9 , x = 1 . Then apply the operation once to a n + 1 a n + 1 .",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "number theory",
+        "*1300"
+    ],
+    "editorial_content": null
+}

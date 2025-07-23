@@ -1,0 +1,18 @@
+{
+    "contest_id": "1913",
+    "problem_index": "C",
+    "title": "C. Game with Multiset",
+    "description": "In this problem, you are initially given an empty multiset. You have to process two types of queries: ADD x x — add an element equal to 2 x 2 x to the multiset; GET w w — say whether it is possible to take the sum of some subset of the current multiset and get a value equal to w w .",
+    "input": "Input The first line contains one integer m m ( 1 ≤ m ≤ 10 5 1 ≤ m ≤ 10 5 ) — the number of queries. Then m m lines follow, each of which contains two integers t i t i , v i v i , denoting the i i -th query. If t i = 1 t i = 1 , then the i i -th query is ADD v i v i ( 0 ≤ v i ≤ 29 0 ≤ v i ≤ 29 ). If t i = 2 t i = 2 , then the i i -th query is GET v i v i ( 0 ≤ v i ≤ 10 9 0 ≤ v i ≤ 10 9 ).",
+    "output": "Output For each GET query, print YES if it is possible to choose a subset with sum equal to w w , or NO if it is impossible.",
+    "example": "Examples\nInput\nCopy\n5\n1 0\n1 0\n1 0\n2 3\n2 4\nOutput\nCopy\nYES\nNO\nInput\nCopy\n7\n1 0\n1 1\n1 2\n1 10\n2 4\n2 6\n2 7\nOutput\nCopy\nYES\nYES\nYES",
+    "note": "",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "brute force",
+        "greedy",
+        "*1300"
+    ],
+    "editorial_content": null
+}

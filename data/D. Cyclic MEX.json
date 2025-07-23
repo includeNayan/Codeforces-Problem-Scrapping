@@ -1,0 +1,18 @@
+{
+    "contest_id": "1905",
+    "problem_index": "D",
+    "title": "D. Cyclic MEX",
+    "description": "For an array a a , define its cost as ∑ n i = 1 mex † ( [ a 1 , a 2 , … , a i ] ) ∑ n i = 1 mex † ( [ a 1 , a 2 , … , a i ] ) . You are given a permutation ‡ ‡ p p of the set { 0 , 1 , 2 , … , n − 1 } { 0 , 1 , 2 , … , n − 1 } . Find the maximum cost across all cyclic shifts of p p . † mex ( [ b 1 , b 2 , … , b m ] ) † mex ( [ b 1 , b 2 , … , b m ] ) is the smallest non-negative integer x x such that x x does not occur among b 1 , b 2 , … , b m b 1 , b 2 , … , b m . ‡ ‡ A permutation of the set { 0 , 1 , 2 , . . . , n − 1 } { 0 , 1 , 2 , . . . , n − 1 } is an array consisting of n n distinct integers from 0 0 to n − 1 n − 1 in arbitrary order. For example, [ 1 , 2 , 0 , 4 , 3 ] [ 1 , 2 , 0 , 4 , 3 ] is a permutation, but [ 0 , 1 , 1 ] [ 0 , 1 , 1 ] is not a permutation ( 1 1 appears twice in the array), and [ 0 , 2 , 3 ] [ 0 , 2 , 3 ] is also not a permutation ( n = 3 n = 3 but there is 3 3 in the array).",
+    "input": "Input Each test consists of multiple test cases. The first line contains a single integer t t ( 1 ≤ t ≤ 10 5 1 ≤ t ≤ 10 5 ) — the number of test cases. The description of the test cases follows. The first line of each test case contains a single integer n n ( 1 ≤ n ≤ 10 6 1 ≤ n ≤ 10 6 ) — the length of the permutation p p . The second line of each test case contain n n distinct integers p 1 , p 2 , … , p n p 1 , p 2 , … , p n ( 0 ≤ p i < n 0 ≤ p i < n ) — the elements of the permutation p p . It is guaranteed that sum of n n over all test cases does not exceed 10 6 10 6 .",
+    "output": "Output For each test case, output a single integer — the maximum cost across all cyclic shifts of p p .",
+    "example": "Example\nInput\nCopy\n4\n6\n5 4 3 2 1 0\n3\n2 1 0\n8\n2 3 6 7 0 1 4 5\n1\n0\nOutput\nCopy\n15\n5\n31\n1",
+    "note": "Note In the first test case, the cyclic shift that yields the maximum cost is [ 2 , 1 , 0 , 5 , 4 , 3 ] [ 2 , 1 , 0 , 5 , 4 , 3 ] with cost 0 + 0 + 3 + 3 + 3 + 6 = 15 0 + 0 + 3 + 3 + 3 + 6 = 15 . In the second test case, the cyclic shift that yields the maximum cost is [ 0 , 2 , 1 ] [ 0 , 2 , 1 ] with cost 1 + 1 + 3 = 5 1 + 1 + 3 = 5 .",
+    "tags": [
+        "data structures",
+        "implementation",
+        "math",
+        "two pointers",
+        "*2000"
+    ],
+    "editorial_content": null
+}

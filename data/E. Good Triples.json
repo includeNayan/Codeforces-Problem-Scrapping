@@ -1,0 +1,17 @@
+{
+    "contest_id": "1907",
+    "problem_index": "E",
+    "title": "E. Good Triples",
+    "description": "Given a non-negative integer number n n ( n ≥ 0 n ≥ 0 ). Let's say a triple of non-negative integers ( a , b , c ) ( a , b , c ) is good if a + b + c = n a + b + c = n , and d i g s u m ( a ) + d i g s u m ( b ) + d i g s u m ( c ) = d i g s u m ( n ) d i g s u m ( a ) + d i g s u m ( b ) + d i g s u m ( c ) = d i g s u m ( n ) , where d i g s u m ( x ) d i g s u m ( x ) is the sum of digits of number x x . For example, if n = 26 n = 26 , then the pair ( 4 , 12 , 10 ) ( 4 , 12 , 10 ) is good, because 4 + 12 + 10 = 26 4 + 12 + 10 = 26 , and ( 4 ) + ( 1 + 2 ) + ( 1 + 0 ) = ( 2 + 6 ) ( 4 ) + ( 1 + 2 ) + ( 1 + 0 ) = ( 2 + 6 ) . Your task is to find the number of good triples for the given number n n . The order of the numbers in a triple matters. For example, the triples ( 4 , 12 , 10 ) ( 4 , 12 , 10 ) and ( 10 , 12 , 4 ) ( 10 , 12 , 4 ) are two different triples.",
+    "input": "Input The first line of input contains a single integer t t ( 1 ≤ t ≤ 10 4 1 ≤ t ≤ 10 4 ) — the number of test cases. Descriptions of test cases follow. The first and only line of the test case contains one integer n n ( 0 ≤ n ≤ 10 7 0 ≤ n ≤ 10 7 ).",
+    "output": "Output For each test case output one integer, the number of good triples for the given integer n n . Order of integers in a triple matters.",
+    "example": "Example\nInput\nCopy\n12\n11\n0\n1\n2\n3\n4\n5\n3141\n999\n2718\n9999999\n10000000\nOutput\nCopy\n9\n1\n3\n6\n10\n15\n21\n1350\n166375\n29160\n1522435234375\n3",
+    "note": "Note In the first example, the good triples are ( 0 , 0 , 11 ) ( 0 , 0 , 11 ) , ( 0 , 1 , 10 ) ( 0 , 1 , 10 ) , ( 0 , 10 , 1 ) ( 0 , 10 , 1 ) , ( 0 , 11 , 0 ) ( 0 , 11 , 0 ) , ( 1 , 0 , 10 ) ( 1 , 0 , 10 ) , ( 1 , 10 , 0 ) ( 1 , 10 , 0 ) , ( 10 , 0 , 1 ) ( 10 , 0 , 1 ) , ( 10 , 1 , 0 ) ( 10 , 1 , 0 ) , ( 11 , 0 , 0 ) ( 11 , 0 , 0 ) . In the second example, there is only one good triple ( 0 , 0 , 0 ) ( 0 , 0 , 0 ) .",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "number theory",
+        "*1600"
+    ],
+    "editorial_content": null
+}

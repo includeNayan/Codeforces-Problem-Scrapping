@@ -1,0 +1,15 @@
+{
+    "contest_id": "1913",
+    "problem_index": "A",
+    "title": "A. Rating Increase",
+    "description": "Monocarp is a great solver of adhoc problems. Recently, he participated in an Educational Codeforces Round, and gained rating! Monocarp knew that, before the round, his rating was a a . After the round, it increased to b b ( b > a b > a ). He wrote both values one after another to not forget them. However, he wrote them so close to each other, that he can't tell now where the first value ends and the second value starts. Please, help him find some values a a and b b such that: neither of them has a leading zero; both of them are strictly greater than 0 0 ; b > a b > a ; they produce the given value a b a b when written one after another. If there are multiple answers, you can print any of them.",
+    "input": "Input The first line contains a single integer t t ( 1 ≤ t ≤ 10 4 1 ≤ t ≤ 10 4 ) — the number of testcases. The only line of each testcase consists of a single string a b a b of length from 2 2 to 8 8 that: consists only of digits; doesn't start with a zero.",
+    "output": "Output For each testcase, determine if such values a a and b b exist. If they don't, print -1 . Otherwise, print two integers a a and b b . If there are multiple answers, you can print any of them.",
+    "example": "Example\nInput\nCopy\n5\n20002001\n391125\n200200\n2001000\n12\nOutput\nCopy\n2000 2001\n39 1125\n-1\n200 1000\n1 2",
+    "note": "Note In the second testcase, printing 3 3 and 91125 91125 is also valid. In the third testcase, 20 20 and 0200 0200 is not valid, because b b has a leading zero. 200 200 and 200 200 is not valid, because 200 200 is not strictly greater than 200 200 .",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "editorial_content": null
+}

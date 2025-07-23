@@ -1,0 +1,18 @@
+{
+    "contest_id": "1831",
+    "problem_index": "F",
+    "title": "F. Mex Tree",
+    "description": "You are given a tree with n n nodes. For each node, you either color it in 0 0 or 1 1 . The value of a path ( u , v ) ( u , v ) is equal to the MEX † † of the colors of the nodes from the shortest path between u u and v v . The value of a coloring is equal to the sum of values of all paths ( u , v ) ( u , v ) such that 1 ≤ u ≤ v ≤ n 1 ≤ u ≤ v ≤ n . What is the maximum possible value of any coloring of the tree? † † The MEX (minimum excluded) of an array is the smallest non-negative integer that does not belong to the array. For instance: The MEX of [ 2 , 2 , 1 ] [ 2 , 2 , 1 ] is 0 0 , because 0 0 does not belong to the array. The MEX of [ 3 , 1 , 0 , 1 ] [ 3 , 1 , 0 , 1 ] is 2 2 , because 0 0 and 1 1 belong to the array, but 2 2 does not. The MEX of [ 0 , 3 , 1 , 2 ] [ 0 , 3 , 1 , 2 ] is 4 4 because 0 0 , 1 1 , 2 2 , and 3 3 belong to the array, but 4 4 does not.",
+    "input": "Input Each test contains multiple test cases. The first line of input contains a single integer t t ( 1 ≤ t ≤ 10 4 1 ≤ t ≤ 10 4 ) — the number of test cases. The description of test cases follows. The first line of each test case contains a single integer n n ( 1 ≤ n ≤ 2 ⋅ 10 5 1 ≤ n ≤ 2 ⋅ 10 5 ) — the number of nodes in the tree. The following n − 1 n − 1 lines of each test case contains 2 2 integers a i a i and b i b i ( 1 ≤ a i , b i ≤ n , a i ≠ b i 1 ≤ a i , b i ≤ n , a i ≠ b i ) — indicating an edge between vertices a i a i and b i b i . It is guaranteed that the given edges form a tree. It is guaranteed that the sum of n n across all test cases does not exceed 2 ⋅ 10 5 2 ⋅ 10 5 .",
+    "output": "Output For each test case, print the maximum possible value of any coloring of the tree.",
+    "example": "Example\nInput\nCopy\n4\n3\n1 2\n2 3\n4\n1 2\n1 3\n1 4\n10\n1 2\n1 3\n3 4\n3 5\n1 6\n5 7\n2 8\n6 9\n6 10\n1\nOutput\nCopy\n8\n15\n96\n1",
+    "note": "Note In the first sample, we will color vertex 2 2 in 1 1 and vertices 1 , 3 1 , 3 in 0 0 . After this, we consider all paths: ( 1 , 1 ) ( 1 , 1 ) with value 1 1 ( 1 , 2 ) ( 1 , 2 ) with value 2 2 ( 1 , 3 ) ( 1 , 3 ) with value 2 2 ( 2 , 2 ) ( 2 , 2 ) with value 0 0 ( 2 , 3 ) ( 2 , 3 ) with value 2 2 ( 3 , 3 ) ( 3 , 3 ) with value 1 1 We notice the sum of values is 8 8 which is the maximum possible.",
+    "tags": [
+        "brute force",
+        "brute force",
+        "dp",
+        "trees",
+        "*2800"
+    ],
+    "editorial_content": null
+}

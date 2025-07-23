@@ -1,0 +1,19 @@
+{
+    "contest_id": "1899",
+    "problem_index": "F",
+    "title": "F. Alex's whims",
+    "description": "Tree is a connected graph without cycles. It can be shown that any tree of n n vertices has exactly n − 1 n − 1 edges. Leaf is a vertex in the tree with exactly one edge connected to it. Distance between two vertices u u and v v in a tree is the minimum number of edges that must be passed to come from vertex u u to vertex v v . Alex's birthday is coming up, and Timofey would like to gift him a tree of n n vertices. However, Alex is a very moody boy. Every day for q q days, he will choose an integer, denoted by the integer chosen on the i i -th day by d i d i . If on the i i -th day there are not two leaves in the tree at a distance exactly d i d i , Alex will be disappointed . Timofey decides to gift Alex a designer so that he can change his tree as he wants. Timofey knows that Alex is also lazy (a disaster, not a human being), so at the beginning of every day, he can perform no more than one operation of the following kind: Choose vertices u u , v 1 v 1 , and v 2 v 2 such that there is an edge between u u and v 1 v 1 and no edge between u u and v 2 v 2 . Then remove the edge between u u and v 1 v 1 and add an edge between u u and v 2 v 2 . This operation cannot be performed if the graph is no longer a tree after it. Somehow Timofey managed to find out all the d i d i . After that, he had another brilliant idea — just in case, make an instruction manual for the set, one that Alex wouldn't be disappointed . Timofey is not as lazy as Alex, but when he saw the integer n n , he quickly lost the desire to develop the instruction and the original tree, so he assigned this task to you. It can be shown that a tree and a sequence of operations satisfying the described conditions always exist. Here is an example of an operation where vertices were selected: u u — 6 6 , v 1 v 1 — 1 1 , v 2 v 2 — 4 4 .",
+    "input": "Input The first line contains the integer t t ( 1 ≤ t ≤ 100 1 ≤ t ≤ 100 ) — the number of test cases. The first line of each test case contains two integers n n ( 3 ≤ n ≤ 500 3 ≤ n ≤ 500 ) and q q ( 1 ≤ q ≤ 500 1 ≤ q ≤ 500 ) — the number of nodes in the tree and the number of days, respectively. The i i th of the following q q lines contains the integer d i d i ( 2 ≤ d i ≤ n − 1 2 ≤ d i ≤ n − 1 ). It is guaranteed that the sum of n n over all test cases does not exceed 500 500 . The same is guaranteed for q q . It can be shown that a tree and a sequence of operations satisfying the described conditions always exist.",
+    "output": "Output For each test case, first print an n − 1 n − 1 string describing the edges of the tree. If you want the tree to have an edge between nodes u u and v v , there must be a string v v u u or u u v v among these n − 1 n − 1 lines. In the next q q lines, print three integers each u u v 1 v 1 v 2 v 2 — a description of the operations. If Alex doesn't need to perform an operation the following day, print − 1 − 1 − 1 − 1 − 1 − 1 .",
+    "example": "Example\nInput\nCopy\n3\n3 3\n2\n2\n2\n5 6\n4\n2\n3\n4\n3\n2\n4 9\n2\n3\n3\n2\n2\n2\n3\n2\n2\nOutput\nCopy\n1 2\n2 3\n-1 -1 -1\n-1 -1 -1\n-1 -1 -1\n1 2\n2 3\n3 4\n4 5\n-1 -1 -1\n4 3 2\n5 4 3\n4 2 5\n4 5 2\n5 3 4\n1 2\n2 3\n3 4\n4 3 2\n4 2 3\n-1 -1 -1\n4 3 2\n-1 -1 -1\n-1 -1 -1\n4 2 3\n4 3 2\n-1 -1 -1",
+    "note": "",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "greedy",
+        "shortest paths",
+        "trees",
+        "*1600"
+    ],
+    "editorial_content": null
+}

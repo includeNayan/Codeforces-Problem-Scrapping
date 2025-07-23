@@ -1,0 +1,18 @@
+{
+    "contest_id": "1831",
+    "problem_index": "C",
+    "title": "C. Copil Copac Draws Trees",
+    "description": "Copil Copac is given a list of n − 1 n − 1 edges describing a tree of n n vertices. He decides to draw it using the following algorithm: Step 0 0 : Draws the first vertex (vertex 1 1 ). Go to step 1 1 . Step 1 1 : For every edge in the input, in order: if the edge connects an already drawn vertex u u to an undrawn vertex v v , he will draw the undrawn vertex v v and the edge. After checking every edge, go to step 2 2 . Step 2 2 : If all the vertices are drawn, terminate the algorithm. Else, go to step 1 1 . The number of readings is defined as the number of times Copil Copac performs step 1 1 . Find the number of readings needed by Copil Copac to draw the tree.",
+    "input": "Input Each test contains multiple test cases. The first line of input contains a single integer t t ( 1 ≤ t ≤ 10 4 1 ≤ t ≤ 10 4 ) — the number of test cases. The description of test cases follows. The first line of each test case contains a single integer n n ( 2 ≤ n ≤ 2 ⋅ 10 5 2 ≤ n ≤ 2 ⋅ 10 5 ) — the number of vertices of the tree. The following n − 1 n − 1 lines of each test case contain two integers u i u i and v i v i ( 1 ≤ u i , v i ≤ n 1 ≤ u i , v i ≤ n , u i ≠ v i u i ≠ v i ) — indicating that ( u i , v i ) ( u i , v i ) is the i i -th edge in the list. It is guaranteed that the given edges form a tree. It is guaranteed that the sum of n n over all test cases does not exceed 2 ⋅ 10 5 2 ⋅ 10 5 .",
+    "output": "Output For each test case, output the number of readings Copil Copac needs to draw the tree.",
+    "example": "Example\nInput\nCopy\n2\n6\n4 5\n1 3\n1 2\n3 4\n1 6\n7\n5 6\n2 4\n2 7\n1 3\n1 2\n4 5\nOutput\nCopy\n2\n3",
+    "note": "Note In the first test case: After the first reading, the tree will look like this: After the second reading: Therefore, Copil Copac needs 2 2 readings to draw the tree.",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "trees",
+        "*1400"
+    ],
+    "editorial_content": null
+}

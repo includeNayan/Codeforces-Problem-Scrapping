@@ -1,0 +1,16 @@
+{
+    "contest_id": "1831",
+    "problem_index": "B",
+    "title": "B. Array merging",
+    "description": "You are given two arrays a a and b b both of length n n . You will merge † † these arrays forming another array c c of length 2 ⋅ n 2 ⋅ n . You have to find the maximum length of a subarray consisting of equal values across all arrays c c that could be obtained. † † A merge of two arrays results in an array c c composed by successively taking the first element of either array (as long as that array is nonempty) and removing it. After this step, the element is appended to the back of c c . We repeat this operation as long as we can (i.e. at least one array is nonempty).",
+    "input": "Input Each test contains multiple test cases. The first line of input contains a single integer t t ( 1 ≤ t ≤ 10 4 1 ≤ t ≤ 10 4 ) — the number of test cases. The description of test cases follows. The first line of each test case contains a single integer n n ( 1 ≤ n ≤ 2 ⋅ 10 5 1 ≤ n ≤ 2 ⋅ 10 5 ) — the length of the array a a and b b . The second line of each test case contains n n integers a 1 , a 2 , … , a n a 1 , a 2 , … , a n ( 1 ≤ a i ≤ 2 ⋅ n 1 ≤ a i ≤ 2 ⋅ n ) — the elements of array a a . The third line of each test case contains n n integers b 1 , b 2 , … , b n b 1 , b 2 , … , b n ( 1 ≤ b i ≤ 2 ⋅ n 1 ≤ b i ≤ 2 ⋅ n ) — the elements of array b b . It is guaranteed that the sum of n n across all test cases does not exceed 2 ⋅ 10 5 2 ⋅ 10 5 .",
+    "output": "Output For each test case, output the maximum length of a subarray consisting of equal values across all merges.",
+    "example": "Example\nInput\nCopy\n4\n1\n2\n2\n3\n1 2 3\n4 5 6\n2\n1 2\n2 1\n5\n1 2 2 2 2\n2 1 1 1 1\nOutput\nCopy\n2\n1\n2\n5",
+    "note": "Note In the first test case, we can only make c = [ 2 , 2 ] c = [ 2 , 2 ] , thus the answer is 2 2 . In the second test case, since all values are distinct, the answer must be 1 1 . In the third test case, the arrays c c we can make are [ 1 , 2 , 1 , 2 ] [ 1 , 2 , 1 , 2 ] , [ 1 , 2 , 2 , 1 ] [ 1 , 2 , 2 , 1 ] , [ 2 , 1 , 1 , 2 ] [ 2 , 1 , 1 , 2 ] , [ 2 , 1 , 2 , 1 ] [ 2 , 1 , 2 , 1 ] . We can see that the answer is 2 2 when we choose c = [ 1 , 2 , 2 , 1 ] c = [ 1 , 2 , 2 , 1 ] .",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*1000"
+    ],
+    "editorial_content": null
+}

@@ -1,0 +1,17 @@
+{
+    "contest_id": "1899",
+    "problem_index": "E",
+    "title": "E. Queue Sort",
+    "description": "Vlad found an array a a of n n integers and decided to sort it in non-decreasing order. To do this, Vlad can apply the following operation any number of times: Extract the first element of the array and insert it at the end; Swap that element with the previous one until it becomes the first or until it becomes strictly greater than the previous one. Note that both actions are part of the operation, and for one operation, you must apply both actions. For example, if you apply the operation to the array [ 4 , 3 , 1 , 2 , 6 , 4 4 , 3 , 1 , 2 , 6 , 4 ], it will change as follows: [ 4 , 3 , 1 , 2 , 6 , 4 4 , 3 , 1 , 2 , 6 , 4 ]; [ 3 , 1 , 2 , 6 , 4 , 4 3 , 1 , 2 , 6 , 4 , 4 ]; [ 3 , 1 , 2 , 6 , 4 , 4 3 , 1 , 2 , 6 , 4 , 4 ]; [ 3 , 1 , 2 , 4 , 6 , 4 3 , 1 , 2 , 4 , 6 , 4 ]. Vlad doesn't have time to perform all the operations, so he asks you to determine the minimum number of operations required to sort the array or report that it is impossible.",
+    "input": "Input The first line of the input contains a single integer t t ( 1 ≤ t ≤ 10 4 1 ≤ t ≤ 10 4 ) — the number of test cases. Descriptions of the test cases follow. The first line of each test case contains a single integer n n ( 1 ≤ n ≤ 2 ⋅ 10 5 1 ≤ n ≤ 2 ⋅ 10 5 ) — the length of the array. The second line of each test case contains n n integers a 1 , a 2 , a 3 , … , a n a 1 , a 2 , a 3 , … , a n ( 1 ≤ a i ≤ 10 9 1 ≤ a i ≤ 10 9 ) — the elements of the array. It is guaranteed that the sum of n n over all testcases does not exceed 2 ⋅ 10 5 2 ⋅ 10 5 .",
+    "output": "Output For each test case, output a single integer — the minimum number of operations needed to sort the array. If it is impossible to do so, output − 1 − 1 as the answer.",
+    "example": "Example\nInput\nCopy\n5\n5\n6 4 1 2 5\n7\n4 5 3 7 8 6 2\n6\n4 3 1 2 6 4\n4\n5 2 4 2\n3\n2 2 3\nOutput\nCopy\n2\n6\n-1\n-1\n0",
+    "note": "",
+    "tags": [
+        "greedy",
+        "implementation",
+        "sortings",
+        "*1300"
+    ],
+    "editorial_content": null
+}
