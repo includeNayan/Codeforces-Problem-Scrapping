@@ -1,0 +1,19 @@
+{
+    "contest_id": "1846",
+    "problem_index": "G",
+    "title": "G. Rudolf and CodeVid-23",
+    "description": "A new virus called \"CodeVid-23\" has spread among programmers. Rudolf, being a programmer, was not able to avoid it. There are n n symptoms numbered from 1 1 to n n that can appear when infected. Initially, Rudolf has some of them. He went to the pharmacy and bought m m medicines. For each medicine, the number of days it needs to be taken is known, and the set of symptoms it removes. Unfortunately, medicines often have side effects. Therefore, for each medicine, the set of symptoms that appear when taking it is also known. After reading the instructions, Rudolf realized that taking more than one medicine at a time is very unhealthy. Rudolph wants to be healed as soon as possible. Therefore, he asks you to calculate the minimum number of days to remove all symptoms, or to say that it is impossible.",
+    "input": "Input The first line contains a single integer t t ( 1 ≤ t ≤ 100 ) ( 1 ≤ t ≤ 100 ) — the number of test cases. Then follow the descriptions of the test cases. The first line of each test case contains two integers n , m n , m ( 1 ≤ n ≤ 10 , 1 ≤ m ≤ 10 3 ) ( 1 ≤ n ≤ 10 , 1 ≤ m ≤ 10 3 ) — the number of symptoms and medicines, respectively. The second line of each test case contains a string of length n n consisting of the characters 0 0 and 1 1 — the description of Rudolf's symptoms. If the i i -th character of the string is 1 1 , Rudolf has the i i -th symptom, otherwise he does not. Then follow 3 ⋅ m 3 ⋅ m lines — the description of the medicines. The first line of each medicine description contains an integer d d ( 1 ≤ d ≤ 10 3 ) ( 1 ≤ d ≤ 10 3 ) — the number of days the medicine needs to be taken. The next two lines of the medicine description contain two strings of length n n , consisting of the characters 0 0 and 1 1 — the description of the symptoms it removes and the description of the side effects. In the first of the two lines, 1 1 at position i i means that the medicine removes the i i -th symptom, and 0 0 otherwise. In the second of the two lines, 1 1 at position i i means that the i i -th symptom appears after taking the medicine, and 0 0 otherwise. Different medicines can have the same sets of symptoms and side effects. If a medicine relieves a certain symptom, it will not be among the side effects. The sum of m m over all test cases does not exceed 10 3 10 3 .",
+    "output": "Output For each test case, output a single integer on a separate line — the minimum number of days it will take Rudolf to remove all symptoms. If this never happens, output − 1 − 1 .",
+    "example": "Example\nInput\nCopy\n4\n5 4\n10011\n3\n10000\n00110\n3\n00101\n00000\n3\n01010\n00100\n5\n11010\n00100\n4 1\n0000\n10\n1011\n0100\n2 2\n11\n2\n10\n01\n3\n01\n10\n2 3\n11\n3\n01\n10\n3\n10\n00\n4\n10\n01\nOutput\nCopy\n8\n0\n-1\n6",
+    "note": "Note In the first example, we can first apply medicine number 4 4 , after which the symptoms will look like \"00101\". After that, medicine number 2 2 , then all symptoms will disappear, and the number of days will be 5 + 3 = 8 5 + 3 = 8 . Another option is to apply the medicines in the order 1 , 3 , 2 1 , 3 , 2 . In this case, all symptoms will also disappear, but the number of days will be 3 + 3 + 3 = 9 3 + 3 + 3 = 9 . In the second example, there are no symptoms initially, so the treatment will take 0 0 days. In the third example, there are no options to remove all symptoms.",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "graphs",
+        "greedy",
+        "shortest paths",
+        "*1900"
+    ],
+    "editorial_content": null
+}

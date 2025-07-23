@@ -1,0 +1,18 @@
+{
+    "contest_id": "1883",
+    "problem_index": "G",
+    "title": "G2. Dances (Hard Version)",
+    "description": "This is the hard version of the problem. The only difference is that in this version m ≤ 10 9 m ≤ 10 9 . You are given two arrays of integers a 1 , a 2 , … , a n a 1 , a 2 , … , a n and b 1 , b 2 , … , b n b 1 , b 2 , … , b n . Before applying any operations, you can reorder the elements of each array as you wish. Then, in one operation, you will perform both of the following actions, if the arrays are not empty: Choose any element from array a a and remove it (all remaining elements are shifted to a new array a a ), Choose any element from array b b and remove it (all remaining elements are shifted to a new array b b ). Let k k be the final size of both arrays. You need to find the minimum number of operations required to satisfy a i < b i a i < b i for all 1 ≤ i ≤ k 1 ≤ i ≤ k . This problem was too easy, so the problem author decided to make it more challenging. You are also given a positive integer m m . Now, you need to find the sum of answers to the problem for m m pairs of arrays ( c [ i ] , b ) ( c [ i ] , b ) , where 1 ≤ i ≤ m 1 ≤ i ≤ m . Array c [ i ] c [ i ] is obtained from a a as follows: c [ i ] 1 = i c [ i ] 1 = i , c [ i ] j = a j c [ i ] j = a j , for 2 ≤ j ≤ n 2 ≤ j ≤ n .",
+    "input": "Input Each test consists of multiple test cases. The first line contains a single integer t t ( 1 ≤ t ≤ 10 4 1 ≤ t ≤ 10 4 ) - the number of sets of input data. This is followed by their description. The first line of each test case contains two integers n n and m m ( 2 ≤ n ≤ 10 5 2 ≤ n ≤ 10 5 , 1 ≤ m ≤ 10 9 1 ≤ m ≤ 10 9 ) - the size of arrays a a and b b and the constraints on the value of element a 1 a 1 . The second line of each test case contains n − 1 n − 1 integers a 2 , … , a n a 2 , … , a n ( 1 ≤ a i ≤ 10 9 1 ≤ a i ≤ 10 9 ). The third line of each test case contains n n integers b 1 , b 2 , … , b n b 1 , b 2 , … , b n ( 1 ≤ b i ≤ 10 9 1 ≤ b i ≤ 10 9 ). It is guaranteed that the sum of n n over all test cases does not exceed 10 5 10 5 .",
+    "output": "Output For each test case, output the total number of minimum operations for all pairs of arrays ( c i , b ) ( c i , b ) .",
+    "example": "Example\nInput\nCopy\n4\n2 4\n1\n3 2\n4 7\n5 1 5\n3 8 3 3\n8 4\n4 3 3 2 2 1 1\n1 1 1 1 3 3 3 3\n9 1\n9 2 8 3 7 4 6 5\n1 2 3 2 1 4 5 6 5\nOutput\nCopy\n2\n12\n16\n4",
+    "note": "Note In the first test case: For the pair of arrays ( [ 1 , 1 ] , [ 3 , 2 ] ) ( [ 1 , 1 ] , [ 3 , 2 ] ) , the answer is 0 0 . No operations or reordering of elements are needed. For the pair of arrays ( [ 2 , 1 ] , [ 3 , 2 ] ) ( [ 2 , 1 ] , [ 3 , 2 ] ) , the answer is 0 0 . The elements of the first array can be rearranged to obtain [ 1 , 2 ) [ 1 , 2 ) . No operations are needed. For the pair of arrays ( [ 3 , 1 ] , [ 3 , 2 ] ) ( [ 3 , 1 ] , [ 3 , 2 ] ) , the answer is 1 1 . The element 3 3 can be removed from the first array and the element 2 2 can be removed from the second array. For the pair of arrays ( [ 4 , 1 ] , [ 3 , 2 ] ) ( [ 4 , 1 ] , [ 3 , 2 ] ) , the answer is 1 1 . The element 4 4 can be removed from the first array and the element 3 3 can be removed from the second array.",
+    "tags": [
+        "binary search",
+        "greedy",
+        "sortings",
+        "two pointers",
+        "*1900"
+    ],
+    "editorial_content": null
+}

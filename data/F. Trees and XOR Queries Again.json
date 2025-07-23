@@ -1,0 +1,21 @@
+{
+    "contest_id": "1902",
+    "problem_index": "F",
+    "title": "F. Trees and XOR Queries Again",
+    "description": "You are given a tree consisting of n vertices. There is an integer written on each vertex; the i -th vertex has integer a i written on it. You have to process q queries. The i -th query consists of three integers x i , y i and k i . For this query, you have to answer if it is possible to choose a set of vertices v 1 , v 2 , … , v m (possibly empty) such that: every vertex v j is on the simple path between x i and y i (endpoints can be used as well); a v 1 ⊕ a v 2 ⊕ ⋯ ⊕ a v m = k i , where ⊕ denotes the bitwise XOR operator.",
+    "input": "Input The first line contains one integer n ( 2 ≤ n ≤ 2 ⋅ 10 5 ). The second line contains n integers a 1 , a 2 , … , a n ( 0 ≤ a i ≤ 2 20 − 1 ). Then n − 1 lines follow. Each of them contains two integers u and v ( 1 ≤ u , v ≤ n ; u ≠ v ) denoting an edge of the tree. The next line contains one integer q ( 1 ≤ q ≤ 2 ⋅ 10 5 ) — the number of queries. Then q lines follow. The i -th of them contains three integers x i , y i and k i ( 1 ≤ x i , y i ≤ n ; 0 ≤ k i ≤ 2 20 − 1 ).",
+    "output": "Output For each query, print YES if it is possible to form a set of vertices meeting the constraints. Otherwise, print NO . You can print each letter in any case.",
+    "example": "Example\nInput\nCopy\n4\n0 1 2 10\n2 1\n3 2\n4 2\n8\n3 3 0\n3 4 1\n3 4 7\n1 3 1\n1 3 2\n1 3 10\n1 4 10\n1 4 11\nOutput\nCopy\nYES\nYES\nNO\nYES\nYES\nNO\nYES\nYES",
+    "note": "",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "divide and conquer",
+        "graphs",
+        "implementation",
+        "math",
+        "trees",
+        "*2400"
+    ],
+    "editorial_content": null
+}
