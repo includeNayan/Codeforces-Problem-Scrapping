@@ -1,0 +1,15 @@
+{
+    "contest_id": "2112",
+    "problem_index": "B",
+    "title": "B. Shrinking Array",
+    "description": "Let's call an array bb beautiful if it consists of at least two elements and there exists a position ii such that |bi−bi+1|≤1|bi−bi+1|≤1 (where |x||x| is the absolute value of xx).You are given an array aa, and as long as it consists of at least two elements, you can perform the following operation: Choose two adjacent positions ii and i+1i+1 in the array aa. Choose an integer xx such that min(ai,ai+1)≤x≤max(ai,ai+1)min(ai,ai+1)≤x≤max(ai,ai+1). Remove the numbers aiai and ai+1ai+1 from the array, and insert the number xx in their place. Obviously, the size of the array will decrease by 11. Calculate the minimum number of operations required to make the array beautiful, or report that it is impossible.",
+    "input": "InputThe first line contains one integer tt (1≤t≤2001≤t≤200) — the number of test cases.The first line of each test case contains one integer nn (2≤n≤10002≤n≤1000) — the size of the array aa.The second line contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1061≤ai≤106) — the array aa itself.",
+    "output": "OutputFor each test case, output one integer — the minimum number of operations needed to make the array aa beautiful, or −1−1 if it is impossible to make it beautiful.",
+    "example": "Example\nInput\nCopy\n4\n4\n1 3 3 7\n2\n6 9\n4\n3 1 3 7\n4\n1 3 5 2\nOutput\nCopy\n0\n-1\n1\n1",
+    "note": "NoteIn the first test case, the given array is already beautiful, as |a2−a3|=|3−3|=0|a2−a3|=|3−3|=0.In the second test case, it is impossible to make the array beautiful, as applying the operation would reduce its size to less than two.In the third test case, you can, for example, choose a1a1 and a2a2 and replace them with the number 22. The resulting array [2,3,7][2,3,7] is beautiful.In the fourth test case, you can, for example, choose a2a2 and a3a3 and replace them with the number 33. The resulting array [1,3,2][1,3,2] is beautiful.",
+    "tags": [
+        "brute force",
+        "greedy"
+    ],
+    "editorial_content": null
+}

@@ -1,0 +1,18 @@
+{
+    "contest_id": "2107",
+    "problem_index": "F",
+    "title": "F1. Cycling (Easy Version)",
+    "description": "This is the easy version of the problem. The difference between the versions is that in this version, 1 ≤ n ≤ 5 ⋅ 10 3 1 ≤ n ≤ 5 ⋅ 10 3 and you don't need to output the answer for each prefix. You can hack only if you solved all versions of this problem. Leo works as a programmer in the city center, and his lover teaches at a high school in the suburbs. Every weekend, Leo would ride his bike to the suburbs to spend a nice weekend with his lover. There are n n cyclists riding in front of Leo on this road right now. They are numbered 1 1 , 2 2 , … … , n n from front to back. Initially, Leo is behind the n n -th cyclist. The i i -th cyclist has an agility value a i a i . Leo wants to get ahead of the 1 1 -st cyclist. Leo can take the following actions as many times as he wants: Assuming that the first person in front of Leo is cyclist i i , he can go in front of cyclist i i for a cost of a i a i . This puts him behind cyclist i − 1 i − 1 . Using his super powers, swap a i a i and a j a j ( 1 ≤ i < j ≤ n 1 ≤ i < j ≤ n ) for a cost of ( j − i ) ( j − i ) . Leo wants to know the minimum cost to get in front of the 1 1 -st cyclist. Here you only need to print the answer for the whole array, i.e. [ a 1 , a 2 , … , a n ] [ a 1 , a 2 , … , a n ] .",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases t t ( 1 ≤ t ≤ 10 3 1 ≤ t ≤ 10 3 ). The description of the test cases follows. The first line of each test case contains a positive integer n n ( 1 ≤ n ≤ 5 ⋅ 10 3 1 ≤ n ≤ 5 ⋅ 10 3 ), representing the number of the cyclists. The second line of each test case contains n n integers a 1 , … , a n a 1 , … , a n ( 1 ≤ a i ≤ 10 9 1 ≤ a i ≤ 10 9 ). It is guaranteed that the sum of n n over all test cases does not exceed 5 ⋅ 10 3 5 ⋅ 10 3 .",
+    "output": "Output For each test case, print one integer representing the minimum cost for Leo to go from behind the n n -th cyclist to in front of the 1 1 -st cyclist.",
+    "example": "Example\nInput\nCopy\n4\n3\n1 2 4\n4\n1 1 1 1\n2\n1 2\n4\n4 1 3 2\nOutput\nCopy\n7\n4\n3\n8",
+    "note": "Note In the first test case, one possible way to move from the position behind the n n -th cyclist to the position in front of the 1 1 -st cyclist is: Leo swaps a 2 a 2 ( i = 2 ) ( i = 2 ) and a 3 a 3 ( j = 3 ) ( j = 3 ) , then the array becomes [ 1 , 4 , 2 ] [ 1 , 4 , 2 ] ; it costs j − i = 3 − 2 = 1 j − i = 3 − 2 = 1 . Leo is behind the 3 3 -rd cyclist and moves behind the 2 2 -nd cyclist; it costs a 3 = 2 a 3 = 2 . Leo swaps a 1 a 1 ( i = 1 ) ( i = 1 ) and a 2 a 2 ( j = 2 ) ( j = 2 ) , then the array becomes [ 4 , 1 , 2 ] [ 4 , 1 , 2 ] ; it costs j − i = 2 − 1 = 1 j − i = 2 − 1 = 1 . Leo is behind the 2 2 -nd cyclist and moves behind the 1 1 -st cyclist; it costs a 2 = 1 a 2 = 1 . Leo swaps a 1 a 1 ( i = 1 ) ( i = 1 ) and a 2 a 2 ( j = 2 ) ( j = 2 ) , then the array becomes [ 1 , 4 , 2 ] [ 1 , 4 , 2 ] ; it costs j − i = 2 − 1 = 1 j − i = 2 − 1 = 1 . Leo moves ahead of the 1 1 -st cyclist; it costs a 1 = 1 a 1 = 1 . So the total cost is 1 + 2 + 1 + 1 + 1 + 1 = 7 1 + 2 + 1 + 1 + 1 + 1 = 7 . It can be proved that 7 7 is the minimum cost. In the second test case, to move ahead of the 1 1 -st cyclist from the position behind the n n -th cyclist, Leo should not swap anyone's agility value. The total cost is 1 + 1 + 1 + 1 = 4 1 + 1 + 1 + 1 = 4 .",
+    "tags": [
+        "binary search",
+        "brute force",
+        "dp",
+        "greedy",
+        "*2300"
+    ],
+    "editorial_content": null
+}

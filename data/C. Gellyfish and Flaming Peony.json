@@ -1,0 +1,20 @@
+{
+    "contest_id": "2116",
+    "problem_index": "C",
+    "title": "C. Gellyfish and Flaming Peony",
+    "description": "Gellyfish hates math problems, but she has to finish her math homework: Gellyfish is given an array of n n positive integers a 1 , a 2 , … , a n a 1 , a 2 , … , a n . She needs to do the following two-step operation until all elements of a a are equal: Select two indexes i i , j j satisfying 1 ≤ i , j ≤ n 1 ≤ i , j ≤ n and i ≠ j i ≠ j . Replace a i a i with gcd ( a i , a j ) gcd ( a i , a j ) . Now, Gellyfish asks you for the minimum number of operations to achieve her goal. It can be proven that Gellyfish can always achieve her goal.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases t t ( 1 ≤ t ≤ 5000 1 ≤ t ≤ 5000 ). The description of the test cases follows. The first line of each test case contains a single integer n n ( 1 ≤ n ≤ 5000 1 ≤ n ≤ 5000 ) — the length of the array. The second line of each test case contains n n integers a 1 , a 2 , … , a n a 1 , a 2 , … , a n ( 1 ≤ a i ≤ 5000 1 ≤ a i ≤ 5000 ) — the elements of the array. It is guaranteed that the sum of n n over all test cases does not exceed 5000 5000 .",
+    "output": "Output For each test case, output a single integer — the minimum number of operations to achieve her goal.",
+    "example": "Example\nInput\nCopy\n3\n3\n12 20 30\n6\n1 9 1 9 8 1\n3\n6 14 15\nOutput\nCopy\n4\n3\n3",
+    "note": "Note In the first test case, the following is a way that minimizes the number of operations: Choose i = 3 i = 3 and j = 2 j = 2 and replace a 3 a 3 with gcd ( a 3 , a 2 ) = gcd ( 30 , 20 ) = 10 gcd ( a 3 , a 2 ) = gcd ( 30 , 20 ) = 10 , then a a becomes [ 12 , 20 , 10 ] [ 12 , 20 , 10 ] . Choose i = 1 i = 1 and j = 3 j = 3 and replace a 1 a 1 with gcd ( a 1 , a 3 ) = gcd ( 12 , 10 ) = 2 gcd ( a 1 , a 3 ) = gcd ( 12 , 10 ) = 2 , then a a becomes [ 2 , 20 , 10 ] [ 2 , 20 , 10 ] . Choose i = 2 i = 2 and j = 1 j = 1 and replace a 2 a 2 with gcd ( a 2 , a 1 ) = gcd ( 20 , 2 ) = 2 gcd ( a 2 , a 1 ) = gcd ( 20 , 2 ) = 2 , then a a becomes [ 2 , 2 , 10 ] [ 2 , 2 , 10 ] . Choose i = 3 i = 3 and j = 1 j = 1 and replace a 3 a 3 with gcd ( a 3 , a 1 ) = gcd ( 10 , 2 ) = 2 gcd ( a 3 , a 1 ) = gcd ( 10 , 2 ) = 2 , then a a becomes [ 2 , 2 , 2 ] [ 2 , 2 , 2 ] .",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "math",
+        "number theory",
+        "shortest paths",
+        "*1500"
+    ],
+    "editorial_content": null
+}

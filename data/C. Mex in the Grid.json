@@ -1,0 +1,15 @@
+{
+    "contest_id": "2102",
+    "problem_index": "C",
+    "title": "C. Mex in the Grid",
+    "description": "You are given n 2 n 2 cards with values from 0 0 to n 2 − 1 n 2 − 1 . You are to arrange them in a n n by n n grid such that there is exactly one card in each cell. The MEX (minimum excluded value) of a subgrid ∗ ∗ is defined as the smallest non-negative integer that does not appear in the subgrid. Your task is to arrange the cards such that the sum of MEX values over all ( n ( n + 1 ) 2 ) 2 ( n ( n + 1 ) 2 ) 2 subgrids is maximized. ∗ ∗ A subgrid of a n n by n n grid is specified by four numbers l 1 , r 1 , l 2 , r 2 l 1 , r 1 , l 2 , r 2 satisfying 1 ≤ l 1 ≤ r 1 ≤ n 1 ≤ l 1 ≤ r 1 ≤ n and 1 ≤ l 2 ≤ r 2 ≤ n 1 ≤ l 2 ≤ r 2 ≤ n . The element in the i i -th row and the j j -th column of the grid is part of the subgrid if and only if l 1 ≤ i ≤ r 1 l 1 ≤ i ≤ r 1 and l 2 ≤ j ≤ r 2 l 2 ≤ j ≤ r 2 .",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases t t ( 1 ≤ t ≤ 100 1 ≤ t ≤ 100 ). The description of the test cases follows. The first line of each test case contains a single integer n n ( 1 ≤ n ≤ 500 1 ≤ n ≤ 500 ) — the side length of the grid. It is guaranteed that the sum of n n over all test cases does not exceed 1000 1000 .",
+    "output": "Output For each test case, output n n lines, each containing n n integers representing the elements of the grid. If there are multiple answers, you can output any of them.",
+    "example": "Example\nInput\nCopy\n2\n2\n3\nOutput\nCopy\n0 1 \n2 3 \n8 4 5 \n6 0 1 \n7 2 3",
+    "note": "Note In the first test case, one valid arrangement is: 0 1 2 3 There are 9 9 subgrids in total, and the 4 4 of them with non-zero MEX are shown below: 0 values: [ 0 ] [ 0 ] — MEX: 1 1 0 1 values: [ 0 , 1 ] [ 0 , 1 ] — MEX: 2 2 0 2 values: [ 0 , 2 ] [ 0 , 2 ] — MEX: 1 1 0 1 2 3 values: [ 0 , 1 , 2 , 3 ] [ 0 , 1 , 2 , 3 ] — MEX: 4 4 The sum of MEX over all subgrids would be 1 + 2 + 1 + 4 = 8 1 + 2 + 1 + 4 = 8 . It can be proven that no other arrangements have a larger sum of MEX values.",
+    "tags": [
+        "constructive algorithms",
+        "*1300"
+    ],
+    "editorial_content": null
+}

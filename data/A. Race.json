@@ -1,0 +1,14 @@
+{
+    "contest_id": "2112",
+    "problem_index": "A",
+    "title": "A. Race",
+    "description": "Alice and Bob participate in a game TV show. When the game starts, the prize will be dropped to a certain point, and whoever gets to it first will get the prize.Alice decided that she would start running from point aa. Bob, however, has not yet chosen his starting position.Bob knows that the prize could drop either at point xx or at point yy. He also knows that he can reach the prize faster than Alice if the distance from his starting position to the prize is strictly less than the distance from Alice's starting position to the prize. The distance between any two points cc and dd is calculated as |c−d||c−d|.Your task is to determine whether Bob can choose an integer point that is guarantee to get to the prize faster, regardless of where it appears (at point xx or yy). Bob can choose any integer point, except for aa (in particular, he can choose to start in point xx, point yy, or any other point, but not aa).",
+    "input": "InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases.The only line of each test case contains three integers aa, xx, yy (1≤a,x,y≤1001≤a,x,y≤100). Points aa, xx, and yy are pairwise distinct.",
+    "output": "OutputFor each test case, print \"YES\" (case insensitive) if Bob can choose an integer point that is guarantee to get to the prize faster, regardless of where it appears. Otherwise, print \"NO\" (case insensitive).",
+    "example": "Example\nInput\nCopy\n3\n1 3 4\n5 3 1\n3 1 5\nOutput\nCopy\nYES\nYES\nNO",
+    "note": "NoteIn the first example, Bob can choose point 44. If the prize will be at point xx, then Bob's distance is |4−3|=1|4−3|=1 and Alice's distance is |1−3|=2|1−3|=2. If the prize will be at point yy, then Bob's distance is |4−4|=0|4−4|=0 and Alice's distance is |1−4|=3|1−4|=3.In the second example, Bob can choose point 22. If the prize will be at point xx, then Bob's distance is |2−3|=1|2−3|=1 and Alice's distance is |5−3|=2|5−3|=2. If the prize will be at point yy, then Bob's distance is |2−1|=1|2−1|=1 and Alice's distance is |5−1|=4|5−1|=4. In the third example, Bob cannot choose a point to guarantee his victory.",
+    "tags": [
+        "math"
+    ],
+    "editorial_content": null
+}
